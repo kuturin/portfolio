@@ -2,9 +2,11 @@ import EachProject from "./EachProject"
 
 const sample = [
     { title: "Portfolio", description: "Moje osobiste portfolio stworzone z użyciem Next.js i Tailwind CSS, prezentujące moje projekty i umiejętności.", url: "https://kuturin.github.io/portfolio/" },
-    { title: "Table Warden", description: "Kompleksowy program do światotwórstwa dla graczy i twórców gier fabularnych.", url: "Projekt nie jest obecnie dostępny" },
-    { title: "Strona dla lokalnej kawiarni", description: "Responsywna strona internetowa dla lokalnej kawiarni, z menu, galerią zdjęć i formularzem kontaktowym.", url: "https://example.com/kawiarnia" },
-    { title: "Aplikacja do zarządzania zadaniami", description: "Prosta aplikacja webowa do zarządzania zadaniami, z funkcjami dodawania, edytowania i usuwania zadań.", url: "https://example.com/task-manager" },
+    { title: "Table Warden", description: "Kompleksowy program do światotwórstwa dla graczy i twórców gier fabularnych.", niedostepny: true, screenshots: [
+      "/screenshots/table_warden_1.png", "/screenshots/table_warden_2.png", "/screenshots/table_warden_3.png"
+    ] },
+    
+    
 ]
 
 export default function Projects() {
