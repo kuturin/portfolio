@@ -1,8 +1,11 @@
 import EachProject from "./EachProject"
+import "../public/screenshots/table_warden_1.png"
+import "../public/screenshots/table_warden_2.png"
+import "../public/screenshots/table_warden_3.png"
 
 const sample = [
-    { title: "Portfolio", description: "Moje osobiste portfolio stworzone z użyciem Next.js i Tailwind CSS, prezentujące moje projekty i umiejętności.", url: "https://kuturin.github.io/portfolio/" },
-    { title: "Table Warden", description: "Kompleksowy program do światotwórstwa dla graczy i twórców gier fabularnych.", niedostepny: true, screenshots: [] },
+    { title: "Portfolio", description: "Moje osobiste portfolio stworzone z użyciem Next.js i Tailwind CSS, prezentujące moje projekty i umiejętności." },
+    { title: "Table Warden", description: "Kompleksowy program do światotwórstwa dla graczy i twórców gier fabularnych.", niedostepny: true, screenshots: ["/screenshots/table_warden_1.png", "/screenshots/table_warden_2.png", "/screenshots/table_warden_3.png"] },
     
     
 ]
