@@ -35,7 +35,7 @@ const EachProject = ({ project }: EachProjectProps) => {
 
             {shots.length > 0 && (
                 <div className="mt-4">
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-3 overflow-visible">
                         {shots.map((src, idx) => (
                             <button
                                 key={idx}
@@ -76,7 +76,7 @@ const EachProject = ({ project }: EachProjectProps) => {
                 >
                     <div className="relative w-full h-full max-w-5xl max-h-[85vh]" onClick={(e) => e.stopPropagation()}>
                         <Image
-                            src={shots[lightbox] as string}
+                            src={shots[lightbox]}
                             alt={`${project.title} pełny zrzut ekranu`}
                             fill
                             sizes="(max-width: 1024px) 90vw, 1024px"
