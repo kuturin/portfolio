@@ -2,15 +2,19 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-interface IProject {
+export interface IProject {
     title: string;
     description: string;
     url?: string;
     niedostepny?: boolean;
-    screenshots?: string[]; // optional array of image URLs
+    screenshots?: string[];
 }
 
-const EachProject: React.FC<{ project: IProject }> = ({ project }) => {
+interface EachProjectProps {
+    project: IProject;
+}
+
+const EachProject = ({ project }: EachProjectProps) => {
     const [lightbox, setLightbox] = useState<number | null>(null)
     const shots = project.screenshots ?? []
 

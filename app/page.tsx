@@ -6,7 +6,7 @@ import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import About from '../components/About'
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
       <Header />
@@ -19,3 +19,4 @@ export default function Home() {
     </>
   )
 }
+export default Home

@@ -1,13 +1,13 @@
-import EachProject from "./EachProject"
+import EachProject, { IProject } from "./EachProject"
 import "../public/screenshots/table_warden_1.png"
 import "../public/screenshots/table_warden_2.png"
 import "../public/screenshots/table_warden_3.png"
 
-const sample = [
+
+
+const myProjects: IProject[] = [
     { title: "Portfolio", description: "Moje osobiste portfolio stworzone z użyciem Next.js i Tailwind CSS, prezentujące moje projekty i umiejętności." },
-    { title: "Table Warden", description: "Kompleksowy program do światotwórstwa dla graczy i twórców gier fabularnych.", niedostepny: true, screenshots: ["/screenshots/table_warden_1.png", "/screenshots/table_warden_2.png", "/screenshots/table_warden_3.png"] },
-    
-    
+    { title: "Table Warden", description: "Kompleksowy program do światotwórstwa dla graczy i twórców gier fabularnych. Użyte technologie: React, Typescript, CSS, Node.js, Express i SQLite.", niedostepny: true, screenshots: ["/screenshots/table_warden_1.png", "/screenshots/table_warden_2.png", "/screenshots/table_warden_3.png"] },
 ]
 
 export default function Projects() {
@@ -15,10 +15,12 @@ export default function Projects() {
     <section id="projects" className="container py-12">
       <h2 className="text-2xl font-semibold mb-6">Wybrane projekty</h2>
       <div className="grid gap-6 sm:grid-cols-2">
-        {sample.map((project) => (
+        {myProjects.map((project) => (
           <EachProject key={project.title} project={project} />
         ))}
       </div>
     </section>
   )
 }
+
+

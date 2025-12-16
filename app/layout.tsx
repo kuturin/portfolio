@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Moje projekty',
 }
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+const RootLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <html lang="pl">
       <body className="bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-50 font-sans">
@@ -15,3 +15,4 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </html>
   )
 }
+export default RootLayout;

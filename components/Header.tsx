@@ -1,4 +1,5 @@
 "use client"
+
 export default function Header() {
   return (
     <header className="w-full border-b border-zinc-200 dark:border-zinc-800">
